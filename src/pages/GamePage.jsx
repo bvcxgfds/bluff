@@ -55,7 +55,7 @@ export default function GamePage({ room, profile, sounds }) {
             {state.roomId} <Copy size={16} />
           </button>
         </div>
-        <div className="topbar-actions">
+      {/*  <div className="topbar-actions">
           <span className={`voice-status ${voice.status.replace(/\s+/g, '-')}`} title={voice.error || voice.status}>
             {voice.status}
             {voice.error && <small>{voice.error}</small>}
@@ -63,7 +63,7 @@ export default function GamePage({ room, profile, sounds }) {
           <button className="icon-button" onClick={voice.toggleMute} aria-label={voice.muted ? 'Unmute microphone' : 'Mute microphone'}>
             {voice.muted ? <MicOff size={19} /> : <Mic size={19} />}
           </button>
-        </div>
+        </div> */}
       </header>
 
       <PlayerStrip players={state.players} currentTurnPlayerId={state.currentTurnPlayerId} speakers={voice.speakers} selfId={room.playerId} />
